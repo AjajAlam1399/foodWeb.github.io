@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  min-height: 1000px;
+}
+.banner {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content {
+  max-width: 80%;
+  text-align: center;
+}
+.content h1 {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+}
+.content p {
+  color: white;
+  line-height: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+}
+.btn-content {
+  color: white;
+  background: rgb(178, 40, 22);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  transition: letter-spacing 0.3s ease-in;
+}
+.btn-content:hover {
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+.sticky {
+  background: #fff;
+  padding: 15px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.sticky .logo {
+  color: #111;
+}
+.sticky .nav-items a {
+  color: #111;
+}
+.sticky .burger div {
+  background-color: #111;
+}
+.container {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.container nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container nav h2 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.container nav a {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in;
+  padding: 6px 15px;
+}
+.container nav a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+.container nav h2 span {
+  color: red;
+  font-size: 2.5rem;
+}
+.nav-items {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.burger div {
+  height: 5px;
+  width: 25px;
+  margin-bottom: 5px;
+  background-color: black;
+}
+.burger {
+  cursor: pointer;
+  display: none;
+}
+section {
+  padding: 100px;
+}
+section .row {
+  display: flex;
+  justify-content: space-between;
+}
+.col50 {
+  position: relative;
+  width: 45%;
+}
+.col50 h1 span {
+  color: red;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.col50 h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.col50 p {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.col50 .imgbx {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.col50 .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title h3 {
+  font-size: 2rem;
+}
+.title h3 span {
+  font-size: 3.5rem;
+  color: red;
+  font-weight: 900;
+}
+.title p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.menu .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.menu .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgbx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.menu .content .box .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.menu .content .text {
+  padding: 15px 0.5px;
+}
+.menu .content h3 {
+  font-weight: 400;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+.experts .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.experts .content .box {
+  width: 250px;
+  margin: 25px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.experts .content .box .imgbox {
+  position: relative;
+  height: 260px;
+}
+.experts .content .box .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.experts .content .text {
+  padding: 15px 0.5px;
+}
+.experts .content h3 {
+  font-weight: 400;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+.testimonials {
+  background: url("bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+.testimonials .title h3 {
+  color: #fff;
+}
+.testimonials .content h3 {
+  color: red;
+}
+.testimonials .content p {
+  color: #111;
+  font-weight: 400;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.testimonials .content .box {
+  width: 350px;
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.testimonials .content .box .imgbox {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.testimonials .content .box .imgbox img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials .content .box h3 {
+  text-align: center;
+}
+.contact .content {
+  position: relative;
+  background: url("bg3.jpg") no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+.contact .content .box {
+  padding: 20px;
+  border: 15px solid #fff;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.08);
+  width: 500px;
+  position: absolute;
+  bottom: 100px;
+  margin-left: 30px;
+  background-color: #fff;
+}
+.contact .content .box h3 {
+  margin-bottom: 25px;
+}
+.contact .content .box input {
+  width: 70%;
+  margin-bottom: 25px;
+  height: 30px;
+}
+.contact .content .box textarea {
+  width: 70%;
+  margin-bottom: 25px;
+}
+.copyright {
+  text-align: center;
+}
+.copyright h3 {
+  font-weight: 300;
+}
+.copyright span {
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+  nav .nav-items {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    transform: translateX(100%);
+    height: 100vh;
+  }
+  .nav-items li a {
+    color: #111;
+  }
+  nav .nav-items li {
+    margin: 20px;
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger div {
+    background-color: #fff;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+nav .nav_click {
+  transform: translateX(0);
+  transition: 0.5s ease-in-out;
+}
+@keyframes nav-lines {
+  from {
+    opacity: 0;
+    ;
+  }
+  to {
+    opacity: 1;
+
+  }
+}
